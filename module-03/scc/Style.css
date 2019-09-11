@@ -20,18 +20,22 @@ img {
     height: auto;
 }
 
+.page-header-container {
+    margin-bottom: 100px;
+    margin-top: 75px;
+}
 .site-navigation {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 75px;
+   
 }
 
 .site-navigation li {
     display: inline-block;
     margin-right: 60px;
+    font-size: 0;
 }
 .site-navigation li:last-child {
 margin-right: 0;
@@ -39,10 +43,12 @@ margin-right: 0;
 
 
 .site-navigation a {
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: #626262;
     line-height: 24px;
+    font-size: 14px;
 
 }
 
@@ -55,7 +61,11 @@ margin-right: 0;
     margin: 0;
     padding: 0;
     font-size: 0;
-    margin-bottom: 60x
+    margin-bottom: 60x;
+    padding-bottom: 70px;
+}
+.image {
+    margin-bottom: 32px;
 }
 .box {
     display: inline-block;
@@ -77,6 +87,7 @@ margin-right: 0;
     color: #b4ad9e;
     line-height: 17px;
     text-transform: uppercase;
+    margin: 0;
     margin-bottom: 25px;
     font-size: 14px;
 }
@@ -84,6 +95,7 @@ margin-right: 0;
 .box h2 {
     font-size: 30px;
     line-height: 36px;
+    margin: 0;
     margin-bottom: 10px;
     text-align: inherit;
 }
@@ -94,10 +106,7 @@ button {
     display: block;
     font-size: 20px;
     line-clamp: 24px;
-    margin-top: 40px;
-    margin-right: 365px;
-    margin-bottom: 72px;
-    margin-left: 345px;
+    margin: 0 auto;
     padding: 20px 34px;
     border: 0;
     border-width: 1px;
@@ -106,9 +115,13 @@ button {
     background-color: white;
     color: #626262;
     cursor: pointer;
+    margin-top: 38px;
 }
 .box-text {
+    margin: 0;
     font-size: 14px;
 }
-
+.menu-link:hover {
+    color: #03a9f4;
+}
 
