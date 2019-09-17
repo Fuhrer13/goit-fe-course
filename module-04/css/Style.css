@@ -106,14 +106,28 @@ h2 {
   width: 255px;
   height: 270px;
   margin-right: 30px;
-  /* background-color: #e9f0fd; */
+  background-color: #e9f0fd;
 
 }
 
 .featured-item:nth-child(4n) {
   margin-right: 0;
 }
+.featured-item:nth-child(5n) {
+  margin-top: 30px
+}
 
+.featured-item:nth-child(6n) {
+  margin-top: 30px
+}
+
+.featured-item:nth-child(7n) {
+  margin-top: 30px
+}
+
+.featured-item:nth-child(8n) {
+  margin-top: 30px
+}
 
 .featured-item-box {
   position: absolute;
