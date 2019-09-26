@@ -17,8 +17,8 @@ html {
     color: #0f0101;
     font-size: 14px;
     margin: 0;
-    z-index: 1;
   }
+  
   .clearfix::after{
     display: table;
     content:'';
@@ -73,12 +73,19 @@ html {
 
   
   .slider {
+    background-image: url(img/fon.jpg);
+    background-position: center;
     width: 1110px;
     height: 603px;
     position: relative;
     margin: auto;
   }
+   
   .slider-arrow-prev {
+    background-image: url(/img/left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
     position: absolute;
     left: 0;
     top: 50%;
@@ -92,6 +99,10 @@ html {
   }
 
   .slider-arrow-next {
+    background-image: url(/img/right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
     position: absolute;
     right: 0;
     top: 50%;
@@ -103,25 +114,19 @@ html {
     cursor: pointer;
     padding: 0;
   }
-  .slider button img {
-    height: 104px;
-    width: 100%;
-    object-fit: cover;
+  .slider button:hover {
+    background-color:#1abc9c;
   }
-
-  .slider-fon-image {
-      height: 600px;
-      width: 100%;
-      object-fit: cover;
-  }
+  
   .slider-content {
     position: absolute;
-    width: 893px;
+    width: 850px;
     height: 164px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0, auto;
+    top: 204px;
+    left: 185px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
   }
 
   .slider-content-title {
@@ -129,7 +134,7 @@ html {
     color: #ffffff;
     text-transform: uppercase;
     line-height: 82px;
-    text-align: center;
+    text-align: left;
     font-weight: 900;
     margin: 0 auto;
     padding: 0;
@@ -142,9 +147,10 @@ html {
     font-weight: 300;
     margin: 0 auto;
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
-
+  
+  
 
   
   
@@ -164,6 +170,7 @@ html {
     text-transform: uppercase;
     line-height: 32px;
     font-weight: 900;
+    margin-bottom: 81px;
   }
   .gallery-title::after {
     display: block;
@@ -173,7 +180,6 @@ html {
     background-color: rgb(26, 188, 156);
     margin: 0 auto;
     margin-top: 32px;
-    margin-bottom: 81px;
    }
 
    
@@ -248,7 +254,7 @@ html {
   width: 255px;
   height: 281px;
   bottom: 35px;
-  left: 0;
+  left: 0px;
   visibility: hidden;
   opacity: 0;
   transition: linear 0,3s;
@@ -266,6 +272,10 @@ html {
   }
 
   .icon-like {
+    background-image: url(/img/BUTTON.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;    
     position: absolute;
     width: 50px;
     height: 50px;
@@ -276,6 +286,10 @@ html {
   }
   
   .icon-arrow {
+    background-image: url(/img/BUTTON\ copy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;  
     position: absolute;
     width: 50px;
     height: 50px;
@@ -285,6 +299,10 @@ html {
   }
 
   .icon-time {
+    background-image: url(/img/BUTTON\ copy\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;  
     position: absolute;
     width: 50px;
     height: 50px;
@@ -295,11 +313,19 @@ html {
   }
 
   .icon-basket {
+    background-image: url(/img/BUTTON\ copy\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;  
     position: absolute;
     width: 166px;
     height: 50px;
     bottom: 95px;
     left: 45px;
+  }
+
+  .icon-group button:hover {
+    background-color:#1abc9c;
   }
 
   .footer-notes {
