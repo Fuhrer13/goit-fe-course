@@ -82,7 +82,7 @@ html {
   }
    
   .slider-arrow-prev {
-    background-image: url(/img/left.png);
+    background-image: url(/css/img/left.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
@@ -99,7 +99,7 @@ html {
   }
 
   .slider-arrow-next {
-    background-image: url(/img/right.png);
+    background-image: url(/css/img/right.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
@@ -256,7 +256,7 @@ html {
   bottom: 35px;
   left: 0px;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0.5;
   transition: linear 0,3s;
 }
 
@@ -272,7 +272,7 @@ html {
   }
 
   .icon-like {
-    background-image: url(/img/BUTTON.png);
+    background-image: url(/css/img/BUTTON.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;    
@@ -286,7 +286,7 @@ html {
   }
   
   .icon-arrow {
-    background-image: url(/img/BUTTON\ copy.png);
+    background-image: url(/css/img/BUTTON\ copy.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;  
@@ -299,7 +299,7 @@ html {
   }
 
   .icon-time {
-    background-image: url(/img/BUTTON\ copy\ 2.png);
+    background-image: url(/css/img/BUTTON\ copy\ 2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;  
@@ -313,7 +313,7 @@ html {
   }
 
   .icon-basket {
-    background-image: url(/img/BUTTON\ copy\ 3.png);
+    background-image: url(/css/img/BUTTON\ copy\ 3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;  
