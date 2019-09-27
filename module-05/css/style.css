@@ -10,6 +10,7 @@ html {
   .container {
     width: 1110px;
     margin: 0 auto;
+  
   }
   
   body {
@@ -85,7 +86,7 @@ html {
     background-image: url(/css/img/left.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: #54a18f;
     position: absolute;
     left: 0;
     top: 50%;
@@ -102,7 +103,7 @@ html {
     background-image: url(/css/img/right.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: #54a18f;
     position: absolute;
     right: 0;
     top: 50%;
@@ -158,6 +159,10 @@ html {
     margin: auto;
     padding: 0;
     background-color: #e9f0fd;
+    padding-bottom: 98px;
+  }
+  .gallery-content {
+    position: relative;
   }
   
   .gallery-title {
@@ -274,13 +279,12 @@ html {
     background-image: url(/css/img/BUTTON.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;    
+    background-color: #54a18f;    
     position: absolute;
     width: 50px;
     height: 50px;
     bottom: 152px;
     left: 45px;
-    background-color: transparent;
     
   }
   
@@ -288,41 +292,39 @@ html {
     background-image: url(/css/img/BUTTON\ copy.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;  
+    background-color: #54a18f;  
     position: absolute;
     width: 50px;
     height: 50px;
     bottom: 152px;
     left: 104px;
-    
   }
 
   .icon-time {
     background-image: url(/css/img/BUTTON\ copy\ 2.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;  
+    background-color: #54a18f;  
     position: absolute;
     width: 50px;
     height: 50px;
     bottom: 152px;
     left: 165px;
-    background-color: transparent;
     
   }
 
   .icon-basket {
     background-image: url(/css/img/BUTTON\ copy\ 3.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;  
+    background-position:center;
+    background-color: #323232;  
     position: absolute;
     width: 166px;
     height: 50px;
     bottom: 95px;
     left: 45px;
   }
-
+  
   .icon-group button:hover {
     background-color:#1abc9c;
   }
@@ -336,7 +338,6 @@ html {
     line-height: 28px;
     text-align: center;
     height: 88px;
-    margin-top: 98px;
   }
 
 footer p {
@@ -349,8 +350,13 @@ footer p {
   transform: translate(-50%, -50%);
 }
 
+.footer p:hover {
+  color:rgb(26, 188, 156);
+}
 
-.gallery-item-list:nth-child(2):hover .icon-group {
+
+
+.gallery-item-list:hover .icon-group {
   visibility: visible;
   opacity: 1;
 }
