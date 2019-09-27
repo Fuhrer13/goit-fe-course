@@ -74,7 +74,7 @@ html {
 
   
   .slider {
-    background-image: url(img/fon.jpg);
+    background-image: url(../img/fon.jpg);
     background-position: center;
     width: 1110px;
     height: 603px;
@@ -83,7 +83,7 @@ html {
   }
    
   .slider-arrow-prev {
-    background-image: url(/css/img/left.png);
+    background-image: url(../img/icon/left.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #54a18f;
@@ -100,7 +100,7 @@ html {
   }
 
   .slider-arrow-next {
-    background-image: url(/css/img/right.png);
+    background-image: url(../img/icon/right.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #54a18f;
@@ -276,7 +276,7 @@ html {
   }
 
   .icon-like {
-    background-image: url(/css/img/BUTTON.png);
+    background-image: url(../img/icon/BUTTON.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #54a18f;    
@@ -289,7 +289,7 @@ html {
   }
   
   .icon-arrow {
-    background-image: url(/css/img/BUTTON\ copy.png);
+    background-image: url(../img/icon/BUTTON\ copy.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #54a18f;  
@@ -301,7 +301,7 @@ html {
   }
 
   .icon-time {
-    background-image: url(/css/img/BUTTON\ copy\ 2.png);
+    background-image: url(../img/icon/BUTTON\ copy\ 2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #54a18f;  
@@ -314,7 +314,7 @@ html {
   }
 
   .icon-basket {
-    background-image: url(/css/img/BUTTON\ copy\ 3.png);
+    background-image: url(../img/icon/BUTTON\ copy\ 3.png);
     background-repeat: no-repeat;
     background-position:center;
     background-color: #323232;  
