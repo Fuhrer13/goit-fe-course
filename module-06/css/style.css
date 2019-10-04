@@ -41,7 +41,7 @@ html {
   .site-navigation {
     display: flex;
     justify-content: space-between;
-    width: 491px;
+    min-width: 491px;
     font-size: 14px;
     list-style: none;
     margin: 0;
@@ -72,12 +72,17 @@ html {
       width: 50px;
       height: 3px;
       margin-top: 12px;
+      transform: scale(0);
+      transition: transform 200ms ease-in-out;
   }
     
-    .site-navigation a:hover {
+  .site-navigation a:hover {
       color:#f38181;
      }
 
+  .site-navigation a:hover::after, .site-navigation a:focus::after {
+      transform: scale(1);
+    }
 
   
   .service {
@@ -115,6 +120,7 @@ html {
     font-weight: 700; 
     text-align: center;
     margin: 0 auto;
+    padding: 0;
   }
 
   .service-title::after {
@@ -158,40 +164,43 @@ html {
     cursor: pointer;
   }
 
-  .service-icon-alarm {
-    background-image: url(../img/cart/ALARM.png);
+  .service-list-item::before {
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .service-icon-line {
-    background-image: url(../img/cart/LINE\ GRAPH.png);
-    background-repeat: no-repeat;
-    background-position: center;
+   .service-list-item:nth-child(1)::before  {
+      background-image: url(../img/cart/ALARM.png);
+   
   }
 
-  .service-icon-computer {
+  .service-list-item:nth-child(2)::before  {
+      background-image: url(../img/cart/LINE\ GRAPH.png);
+   
+  }
+
+  .service-list-item:nth-child(3)::before  {
     background-image: url(../img/cart/COMPUTER\ _\ OK.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    
   }
 
-  .service-icon-book {
+  .service-list-item:nth-child(4)::before  {
     background-image: url(../img/cart/BOOK\ 2.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  
   }
 
-  .service-icon-home {
+  .service-list-item:nth-child(5)::before  {
     background-image: url(../img/cart/HOME.png);
-    background-repeat: no-repeat;
-    background-position: center;
+   
   }
 
-  .service-icon-image {
+  .service-list-item:nth-child(6)::before  {
     background-image: url(../img/cart/IMAGE.png);
-    background-repeat: no-repeat;
-    background-position: center;
+   
   }
 
   
@@ -203,13 +212,19 @@ html {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
-    width: 300px;
+    margin: 0 auto;
+    padding: 0;
   }
-    
+  
+  .service-item-about {
+    margin: 0  auto;
+    padding: 0;
+    text-align: center;
+  }
     
   .team {
     margin: 0 auto;
-    padding: 0;
+    margin-bottom: 83px;
   }
   .container-team-content {
     margin: 0 auto;
@@ -230,7 +245,7 @@ html {
     margin: 0 auto;
     padding-bottom: 26px;
     padding-top: 54px;
-  }
+    }
 
   .team-title {
     font-size: 30px;
@@ -241,6 +256,7 @@ html {
     font-weight: 700; 
     text-align: center;
     margin: 0 auto;
+    padding: 0;
   }
 
   .team-title::after {
@@ -276,20 +292,48 @@ html {
     text-align: center;
     list-style: none;
     width: 381px;
-    margin-bottom: 83px;
+    
   }
   .team-list-item-socials {
     position: absolute;
-    width: 380px;
+    background: linear-gradient( to bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    opacity: 0;
+    width: 381px;
+    height: 470px;
     }
 
+  .team-list-item-socials:hover {
+    opacity: 1;
+    right: 10px;
+    bottom: 10px;
+    }
+
+    .socials-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 207px;
+    left: 80px;
+    width: 224px;
+    height: 56px;
+    border: 2px solid black;
+    
+  }
+
+  
+  .team-list-item-socials li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
 
   
 
-  .team-list-item-socials button {
-    border: none;
-    display: inline-block;
-    margin: 0;
+  .team-list-item-socials a {
+    display: block;
+    margin: 0 auto;
     padding: 0;
     cursor: pointer;
 
@@ -300,13 +344,9 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fce38a; 
-    position: absolute;
     width: 56px;
     height: 56px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid black;
+    
   }
 
   .icon-twitter {
@@ -314,12 +354,9 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fce38a; 
-    position: absolute;
     width: 56px;
     height: 56px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
   }
   
   .icon-pinterest {
@@ -327,12 +364,9 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fce38a; 
-    position: absolute;
     width: 56px;
     height: 56px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
   }
 
   .icon-instagram {
@@ -340,18 +374,16 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fce38a; 
-    position: absolute;
     width: 56px;
     height: 56px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
   }
   
   
 
   .page-footer {
     margin: 0 auto;
+   
   }
   .page-footer p {
     margin: 0;
@@ -362,33 +394,5 @@ html {
     justify-content: space-between;
     min-height: 63px;
   }
-  
-
-  .team-list-item:hover {
-    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    width: 380px;
-    height: 470px;
-  }
-    
-    
- .box {
-   margin: 0 auto;
-   display: flex;
-   background-color: green;
-   width: 500px;
-   height: 500px;
-   border: 1px solid red;
- }
-
- .box button {
-  width: 56px;
-  height: 56px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid black;
- }
-  
+ 
   
