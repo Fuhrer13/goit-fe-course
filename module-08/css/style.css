@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/montserrat-v14-latin-regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/montserrat-v14-latin-700.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/roboto-v20-latin-regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/roboto-v20-latin-300.woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    width: 320px;
+    margin: 0 auto;
+}
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.2l;
+    font-weight: normal;
+    margin: 0;
+    
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.page-header-content {
+    background-image: url(../img/Vector\ Smart\ Object.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.site-logo {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 auto;
+    text-align: center;       
+         
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 185px;
+    margin-bottom: 117px;
+}
+
+
+
+.site-navigation-link {
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    background-color: rgba(26, 25, 21, 0);
+    border-radius: 20px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+
+  
+.site-navigation a {
+    text-decoration: none;  
+
+
+} 
+  
+.site-navigation-link:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+.promo-content {
+    padding-bottom: 140px;
+}
+.promo-title {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: white;
+    display: flex;   
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding-top: 39px;
+}
+
+
+  
+
+.sub-title {
+    text-transform: none;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: white;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.promo-button {
+    display: block;
+    background-color:transparent;
+    min-width: 100%;
+    min-height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.2;
+    color: white;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.promo-button:hover {
+    background-color:#ff4e50;
+}
+  
+
+.partners-title {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    color:black;
+    display: flex;   
+    flex-direction: column;
+    text-align: center;
+    padding-top: 67px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.partners-list {
+    margin: 0;
+    padding: 0;
+
+}
+
+.partners-list--item {
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    min-width: 236px;
+    
+}
+
+.partners-image {
+    margin: 0;
+    display: inline-block;
+}
+
+.partners-list--item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 105px;
+    top: 90px;
+    width: 37px;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.partners-list--item:nth-child(1)::before {
+       background-image: url(../img/cart/red.png);
+   
+}
+
+.partners-list--item:nth-child(2)::before {
+    background-image: url(../img/cart/yellow.png);
+}
+  
+
+.partners-list--item:nth-child(3)::before {
+   background-image: url(../img/cart/green.png);
+
+}
+
+.partners-list--item:nth-child(4)::before {
+    background-image: url(../img/cart/blue.png);
+}
+
+
+.partners-list--item::after {
+    display: block;
+    position: absolute;
+    content: "";
+    right: 115px;
+    top: 100px;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.partners-list--item:nth-child(1)::after {
+    background-image: url(../img/cart/TV.png);
+}
+
+.partners-list--item:nth-child(2)::after {
+    background-image: url(../img/cart/Shape\ 155.png);
+}
+
+.partners-list--item:nth-child(3)::after {
+    background-image: url(../img/cart/cofe.png);
+}
+
+.partners-list--item:nth-child(4)::after {
+    background-image: url(../img/cart/arrow.png);
+}
+
+.partners-list--item h3 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color:black;
+    padding-top: 21px;
+    padding-bottom: 11px;
+    margin: 0;
+}
+
+.partners-list--item p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color:#666666;
+    padding-bottom: 21px;
+    margin: 0;
+
+}
+
+.partners-botton {
+    display: block;
+    background-color:white;
+    min-width: 100%;
+    min-height: 44px;
+    border-style: solid;
+    border-color:#ff4e50;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color:red;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+
+.partners-botton:hover {
+    background-color: #ff4e50;
+    color: white;
+}
+
+
+@media (min-width:748px) { 
+    .page-header-content {
+        background-color: black;
+        background-image: url(../img/Vector\ Smart\ Object\ tablet.png);
+        background-repeat: no-repeat;
+        background-position: center center;  
+        
+    }
+    
+    .container {
+        width: 748px;
+    }
+
+
+    .page-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 30px 30px 160px 30px;
+    }
+
+    .site-navigation {
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .site-logo {
+        margin: 0;
+        padding: 0;           
+    }
+    .promo-title {
+        padding: 0;
+        font-size: 52px;
+    }
+     .promo-button {
+         min-width: 226px;
+         margin: 0 auto;
+          
+     }
+
+    .sub-title {
+        font-size: 24px;
+        padding-top: 42px;
+        padding-bottom: 35px;
+    }
+    .partners-title {
+        padding-top: 72px;
+        padding-bottom: 31px;
+    }
+    .partners-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 128px;
+    }
+
+    .partners-list--item {
+        margin: 0;
+        max-width: 236px;
+        padding: 0 10px;
+        padding-bottom: 25px;
+    }
+
+    .partners-list--item:nth-child(2) {
+        order: 3;
+    }
+
+    .partners-list--item:nth-child(4) {
+        order: 4;
+    }
+
+    .partners-list--item::before {
+        right: 60px;
+    }
+      
+    .partners-list--item::after {
+        right: 70px;
+    }
+
+    .partners-botton {
+        font-size: 14px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        min-width: 197px;
+    }
+    
+      
+}    
+
+@media (min-width: 942px) { 
+        .page-header-content {
+            background-color: black;
+            background-image: url(../img/Vector\ Smart\ Object\ depstop.png);
+            background-repeat: no-repeat;
+            background-position: center center;  
+            
+        }
+        
+        .container {
+            width: 942px;
+        }
+    
+    
+        .page-nav {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding: 48px 0 160px 0;
+        }
+
+        .partners-title {
+            padding-top: 70px;
+            padding-bottom: 32px;
+        }
+        .partners-list {
+            display: flex;
+            flex-wrap: nowrap;
+             padding: 0;
+        }
+    
+}
