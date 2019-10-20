@@ -59,10 +59,10 @@ img {
 }
 
 
-.page-header-content {
+.page-header {
     background-image: url(../img/Vector\ Smart\ Object.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     
 }
 
@@ -106,13 +106,7 @@ img {
     color: white;
 }
 
-
-  
-.site-navigation a {
-    text-decoration: none;  
-
-
-} 
+ 
   
 .site-navigation-link:hover {
     border-color: rgb(255, 255, 255);
@@ -128,10 +122,9 @@ img {
     line-height: 1.2;
     font-weight: 700;
     color: white;
-    display: flex;   
-    flex-direction: column;
+    max-width: 291px;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 39px;
 }
 
@@ -148,7 +141,8 @@ img {
     padding-top: 19px;
     padding-bottom: 20px;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 219px;
 }
 
 .promo-button {
@@ -318,16 +312,16 @@ img {
 
 
 @media (min-width:748px) { 
-    .page-header-content {
+    .page-header {
         background-color: black;
         background-image: url(../img/Vector\ Smart\ Object\ tablet.png);
         background-repeat: no-repeat;
-        background-position: center center;  
+        background-position: top center;  
         
     }
     
     .container {
-        width: 748px;
+        width: 728px;
     }
 
 
@@ -352,6 +346,11 @@ img {
     .promo-title {
         padding: 0;
         font-size: 52px;
+        max-width: 532px;
+    }
+    .sub-title {
+        max-width: 100%;
+
     }
      .promo-button {
          min-width: 226px;
@@ -408,7 +407,7 @@ img {
 }    
 
 @media (min-width: 942px) { 
-        .page-header-content {
+        .page-header{
             background-color: black;
             background-image: url(../img/Vector\ Smart\ Object\ depstop.png);
             background-repeat: no-repeat;
@@ -417,7 +416,7 @@ img {
         }
         
         .container {
-            width: 942px;
+            width: 922px;
         }
     
     
