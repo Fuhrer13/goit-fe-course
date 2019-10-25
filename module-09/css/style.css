@@ -54,22 +54,16 @@ img {
 }
 
 
-.container {
-    width: 320px;
-    margin: 0 auto;
-}
-  
-
-
-
-
-
 .page-header {
     background-image: url(../img/Vector\ Smart\ Object.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     
+}
+.page-nav {
+    margin: 0;
+    padding: 0;
 }
 
 .site-logo {
@@ -87,13 +81,11 @@ img {
 }
 
 .site-navigation {
-    display: flex;
-    justify-content: space-around;
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    width: 185px;
     margin-bottom: 117px;
+
 }
 
 
@@ -105,11 +97,11 @@ img {
     border-color: transparent;
     background-color: rgba(26, 25, 21, 0);
     border-radius: 20px;
-    width: 100%;
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
     color: white;
+
 }
 
  
@@ -119,6 +111,8 @@ img {
 }
 
 .promo-content {
+    margin: 0;
+    padding: 0;
     padding-bottom: 140px;
 }
 .promo-title {
@@ -128,9 +122,8 @@ img {
     line-height: 1.2;
     font-weight: 700;
     color: white;
-    max-width: 291px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 39px;
 }
 
@@ -154,7 +147,6 @@ img {
 .promo-button {
     display: block;
     background-color:transparent;
-    min-width: 100%;
     min-height: 40px;
     border: none;
     border-radius: 20px;
@@ -164,6 +156,7 @@ img {
     color: white;
     font-weight: 700;
     margin: 0 auto;
+    min-width: 100%;
 }
 
 .promo-button:hover {
@@ -195,8 +188,7 @@ img {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    min-width: 236px;
-    
+        
 }
 
 .partners-image {
@@ -208,7 +200,7 @@ img {
     display: block;
     content: "";
     position: absolute;
-    right: 105px;
+    right: 95px;
     top: 90px;
     width: 37px;
     height: 37px;
@@ -245,8 +237,8 @@ img {
     display: block;
     position: absolute;
     content: "";
-    right: 115px;
-    top: 100px;
+    right: 105px;
+    top: 99px;
     width: 17px;
     height: 17px;
     background-repeat: no-repeat;
@@ -314,72 +306,71 @@ img {
     color: white;
 }
 
-
 @media (min-width:748px) { 
     .page-header {
-        background-color: black;
-        background-image: url(../img/Vector\ Smart\ Object\ tablet.png);
-        background-repeat: no-repeat;
-        background-position: top center;  
-        
+    background-color: black;
+    background-image: url(../img/Vector\ Smart\ Object\ tablet.png);
+    background-repeat: no-repeat;
+    background-position: top center;     
     }
-    
-    .container {
-        width: 728px;
-    }
-
 
     .page-nav {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 30px 30px 160px 30px;
+        padding: 30px 0 160px 0;
     }
 
     .site-navigation {
-        justify-content: flex-end;
         margin: 0;
         padding: 0;
-        width: 100%;
     }
 
     .site-logo {
         margin: 0;
         padding: 0;           
     }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .promo-content {
+        margin: 0 auto;
+    }
+
+
     .promo-title {
+        margin: 0;
         padding: 0;
         font-size: 52px;
-        max-width: 532px;
     }
-    .sub-title {
-        max-width: 100%;
-
-    }
-     .promo-button {
-         min-width: 226px;
-         margin: 0 auto;
-          
-     }
 
     .sub-title {
+        padding: 0;
+        margin: 0;
         font-size: 24px;
         padding-top: 42px;
         padding-bottom: 35px;
+        max-width: 100%;
+
     }
+
+    .promo-button {
+         min-width: 226px;
+         margin: 0 auto;
+          
+    }
+
     .partners-title {
         padding-top: 72px;
         padding-bottom: 31px;
     }
+
     .partners-list {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 128px;
-    }
+        padding: 0; 
+    } 
 
     .partners-list--item {
         margin: 0;
-        max-width: 236px;
         padding: 0 10px;
         padding-bottom: 25px;
     }
@@ -393,11 +384,11 @@ img {
     }
 
     .partners-list--item::before {
-        right: 60px;
+        right: 130px;
     }
       
     .partners-list--item::after {
-        right: 70px;
+        right: 140px;
     }
 
     .partners-botton {
@@ -406,39 +397,39 @@ img {
         margin-bottom: 40px;
         min-width: 197px;
     }
-    
-      
-}    
+}
 
 @media (min-width: 942px) { 
-        .page-header{
-            background-color: black;
-            background-image: url(../img/Vector\ Smart\ Object\ depstop.png);
-            background-repeat: no-repeat;
-            background-position: center center;  
-            
-        }
+    .page-header{
+        background-color: black;
+        background-image: url(../img/Vector\ Smart\ Object\ depstop.png);
+        background-repeat: no-repeat;
+        background-position: center center;  
         
-        .container {
-            width: 922px;
-        }
-    
-    
-        .page-nav {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            padding: 48px 0 160px 0;
-        }
+    }
 
-        .partners-title {
-            padding-top: 70px;
-            padding-bottom: 32px;
-        }
-        .partners-list {
-            display: flex;
-            flex-wrap: nowrap;
-             padding: 0;
-        }
-    
+    .page-nav {
+        padding: 48px 0 160px 0;
+    }
+
+    .partners-title { 
+        padding-top: 70px;
+        padding-bottom: 32px;
+    }
+
+    .partners-list {
+        padding: 0;
+    } 
+
+    .partners-list--item::before {
+        right: 85px;
+    }
+      
+    .partners-list--item::after {
+        right: 95px;
+    }
+
 }
+    
+       
+     
