@@ -326,11 +326,6 @@ img {
         padding: 0;           
     }
 
-    .flex-row {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
     .promo-content {
         margin: 0 auto;
         padding-top: 160px;
