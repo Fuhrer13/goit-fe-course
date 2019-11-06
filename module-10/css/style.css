@@ -165,11 +165,8 @@ img {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top center;
-}
-
-.page-header__img:hover {
-    background-image: -webkit-gradient( linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)) );
     background-image: -o-linear-gradient( bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    background-image: -webkit-gradient( linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)) );
     background-image: linear-gradient( to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
     -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
     transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
@@ -198,7 +195,9 @@ img {
 .header__pre-title {
     font-size: 72px;
     font-family: "Kaushan Script";
-    line-height: 1.2; 
+    line-height: 1.2;
+    font-weight: 300;
+    color: white;
 
 }
 
@@ -211,15 +210,17 @@ img {
     line-height: 1.2;
     text-align: center;
     color: white;
-    border: none;
+    border: 3px solid white;
+    border-color: transparent;
     width: 164px;
     background-color:transparent;
     margin-bottom: 230px;
+    margin-top: 10px;
   
 } 
   
 .header__btn:hover {
-    border: 3px solid white; 
+    border-color:white; 
     border-style: solid;
 }
 
@@ -247,6 +248,7 @@ img {
     text-align: center;
     margin: 0 auto;
     padding: 0;
+    font-weight: 700;
 }
 
 .section__pre-title {
@@ -258,6 +260,7 @@ img {
     margin: 0 auto;
     padding-bottom: 26px;
     padding-top: 50px;
+    font-weight: 300;
 }
 
 
@@ -348,6 +351,7 @@ img {
     text-align: left;
     margin: 0;
     padding-left: 55px;
+    font-weight: 300;
 }
   
 .service-item__about {
@@ -355,6 +359,11 @@ img {
     padding: 0;
     padding-left: 60px;
     text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 15px;
+    color: #999999;
 }
     
 .team {
@@ -378,6 +387,9 @@ img {
     height: 39px;
     margin: 0 auto;
     padding-bottom: 94px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #999999;
 } 
   
 .team-item {
@@ -408,6 +420,7 @@ img {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
+    font-weight: 700;
 }
 
 .team-item__occupation {
@@ -422,8 +435,8 @@ img {
 }
 .team-item__socials {
     position: absolute;
-    background: -webkit-gradient( linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)) );
     background: -o-linear-gradient( bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    background: -webkit-gradient( linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)) );
     background: linear-gradient( to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
     opacity: 0;
     width: 381px;
@@ -532,6 +545,7 @@ img {
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
     line-height: 1.2;
+    font-weight: 300;
     
 }
 
@@ -567,34 +581,79 @@ img {
 }
   
 
-.content-btn:hover {
+.content__btn:hover {
     background-color: #f38181;
     color:black;
 }
 
+::-webkit-input-placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+      
+}
+
+::-moz-placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+      
+}
+
+:-ms-input-placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+      
+}
+
+::-ms-input-placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+      
+}
+
+::placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+      
+}
+
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .service-icon__alarm::before  {
+    .service-icon--alarm::before  {
         background-image: url(../img/cart/ALARM@2px.png);   
     }   
       
-    .service-icon__graph::before  {
+    .service-icon--graph::before  {
         background-image: url(../img/cart/LINE\ GRAPH@2px.png);  
      }
     
-    .service-icon__computer::before  {
+    .service-icon--computer::before  {
         background-image: url(../img/cart/COMPUTER\ _\ OK@2px.png);
     }
     
-    .service-icon__book::before  {
+    .service-icon--book::before  {
         background-image: url(../img/cart/BOOK\ 2@2px.png);  
     }
     
-    .service-icon__home::before  {
+    .service-icon--home::before  {
         background-image: url(../img/cart/HOME@2px.png);
     }
     
-    .service-icon__image::before  {
+    .service-icon--image::before  {
         background-image: url(../img/cart/IMAGE@2px.png);   
     }
 }
