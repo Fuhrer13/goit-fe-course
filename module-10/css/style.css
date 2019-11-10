@@ -119,7 +119,7 @@ img {
     font-size: 14px;
     line-height: 1.2;
     color:white;
-    font-weight: 300;        
+    font-weight: 700;        
 }
 
 .site-navigation__icon {
@@ -341,7 +341,7 @@ img {
 }
 
 .service-icon--image::before  {
-    background-image: url(../img/cart/image.png);   
+    background-image: url(../img/cart/home.png);   
 }
 
 .service-item__title {
