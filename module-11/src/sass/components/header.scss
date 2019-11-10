@@ -1,0 +1,123 @@
+.page-nav {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;    
+}
+
+
+.site-logo {
+    display: inline-block;
+   
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    min-width: 691px;
+}
+
+  
+  
+.site-navigation__link {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $text-color-main;
+    font-weight: 300;  
+    
+    &:hover {
+        color: $color-hover-main;
+    }
+
+    &:hover .site-navigation__icon {
+        fill: $fill-hover-main;
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        background-color: $bg-color-main;
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        margin-top: 12px;
+        transform: scale(0);
+        transition: transform 200ms ease-in-out;
+    }
+
+    &:hover::after, &:focus::after {
+        transform: scale(1);
+    }
+}
+
+.site-navigation__icon {
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    fill: $fill-main;
+    transition: fill 0.2s linear;     
+}
+
+
+.page-header__img {
+    background-image: linear-gradient( to bottom,
+     rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9) ),
+     url(../images/Layer15.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+.header__banner {
+    text-align: center;
+}
+
+.header__title {
+    font-size: 150px;
+    font-family: $main-font;
+    font-weight: bold;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 820px;
+    padding-bottom: 125px;
+    color: $text-color-main;
+      
+}
+
+.header__pre-title {
+    font-size: 72px;
+    font-family: $secondary-font;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $text-color-main;
+
+}
+
+.header__btn {
+    display: inline-block;
+    font-size: 14px;
+    font-family: $main-font;    
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    color: $text-color-main;
+    border: 3px solid $border-color-main;
+    border-color: transparent;
+    width: 164px;
+    background-color:transparent;
+    margin-bottom: 230px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $border-color-main; 
+        border-style: solid;
+    }
+  
+} 
+  
