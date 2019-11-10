@@ -635,8 +635,14 @@ img {
 
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .page-header__img {
+        background-image: linear-gradient( to bottom,
+         rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9) ),
+         url(../img/layer15@2x-min.jpg);
+    }
+
     .service-icon--alarm::before  {
-        background-image: url(../img/cart/alarm@2x.png);   
+        background-image: url(../img/cart/ALARM@2x.png);   
     }   
       
     .service-icon--graph::before  {
@@ -652,10 +658,10 @@ img {
     }
     
     .service-icon--home::before  {
-        background-image: url(../img/cart/home@2x.png);
+        background-image: url(../img/cart/HOME@2x.png);
     }
     
     .service-icon--image::before  {
-        background-image: url(../img/cart/image@2x.png);   
+        background-image: url(../img/cart/IMAGE@2x.png);   
     }
 }
