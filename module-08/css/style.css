@@ -63,6 +63,7 @@ img {
     background-image: url(../img/Vector\ Smart\ Object.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     
 }
 
