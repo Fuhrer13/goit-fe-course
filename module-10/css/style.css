@@ -321,7 +321,7 @@ img {
 }
 
 .service-icon--alarm::before  {
-    background-image: url(../img/cart/alarm.png);   
+    background-image: url(../img/cart/ALARM.png);   
 }
   
 .service-icon--graph::before  {
@@ -337,11 +337,11 @@ img {
 }
 
 .service-icon--home::before  {
-    background-image: url(../img/cart/home.png);
+    background-image: url(../img/cart/HOME.png);
 }
 
 .service-icon--image::before  {
-    background-image: url(../img/cart/home.png);   
+    background-image: url(../img/cart/IMAGE.png);   
 }
 
 .service-item__title {
