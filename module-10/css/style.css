@@ -1,47 +1,43 @@
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: local('Montserrat'), local("Montserrat-Regular"),
-    url(../font/montserrat-v14-latin-regular.woff) format("woff"),
-    url(../font/montserrat-v14-latin-regular.woff2) format("woff2");
+    font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: local("Montserrat"), local("Montserrat-Bold"),
-     url(../font/montserrat-v14-latin-700.woff) format("woff"),
-     url(../font/montserrat-v14-latin-700.woff2) format("woff2");
+    src: local("Montserrat"), local("Montserrat-Regular"),
+      url("../font/montserrat-v14-latin-regular.woff") format("woff"),
+      url("../font/montserrat-v14-latin-regular.woff2") format("woff2");
+   }
+   @font-face {
+    font-family: "Montserrat";
     font-weight: 700;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    src: local('Roboto'), local("Roboto-Regular"),
-        url(../font/roboto-v20-latin-regular.woff) format("woff"),
-        url(../font/roboto-v20-latin-regular.woff2) format("woff2");
+    src: local("Montserrat"), local("Montserrat-Bold"),
+      url("../font/montserrat-v14-latin-700.woff") format("woff"),
+      url("../font/montserrat-v14-latin-700.woff2") format("woff2");
+   }
+   @font-face {
+    font-family: "Roboto";
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: "Kaushan Script", sans-serif;
+    src: local("Roboto"), local("Roboto-Regular"),
+      url("../font/roboto-v20-latin-regular.woff") format("woff"),
+      url("../font/roboto-v20-latin-regular.woff2") format("woff2");
+   }
+   @font-face {
+    font-family: "Kaushan Script";
+    font-weight: normal;
+    font-style: normal;
     src: local("Kaushan Script"), local("Kaushan Script-Regular"),
-     url(../font/kaushan-script-v8-latin-regular.woff) format("woff"),
-     url(../font/kaushan-script-v8-latin-regular.woff2) format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    src: local('Roboto'), local("Roboto-Regular"),
-     url(../font/roboto-v20-latin-regular.woff) format("woff"),
-     url(../font/roboto-v20-latin-300italic.woff2) format("woff2");
+      url("../font/kaushan-script-v8-latin-regular.woff") format("woff"),
+      url("../font/kaushan-script-v8-latin-regular.woff2") format("woff2");
+   }
+   @font-face {
+    font-family: "Roboto";
     font-weight: 300;
     font-style: italic;
-}
+    src: local("Roboto"), local("Roboto-Italic"),
+      url("../font/roboto-v20-latin-300italic.woff") format("woff"),
+      url("../font/roboto-v20-latin-300italic.woff2") format("woff2");
+   }
 
 html {
     -webkit-box-sizing: border-box;
@@ -173,7 +169,7 @@ img {
 .page-header__img {
     background-image: linear-gradient( to bottom,
      rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9) ),
-     url(../img/Layer\ 15.jpg);
+     url(../img/Layer15.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top center;
@@ -325,27 +321,27 @@ img {
 }
 
 .service-icon--alarm::before  {
-    background-image: url(../img/cart/ALARM.png);   
+    background-image: url(../img/cart/alarm.png);   
 }
   
 .service-icon--graph::before  {
-    background-image: url(../img/cart/LINE\ GRAPH.png);  
+    background-image: url(../img/cart/line_graph.png);  
  }
 
 .service-icon--computer::before  {
-    background-image: url(../img/cart/COMPUTER\ _\ OK.png);
+    background-image: url(../img/cart/computer.png);
 }
 
 .service-icon--book::before  {
-    background-image: url(../img/cart/BOOK\ 2.png);  
+    background-image: url(../img/cart/book.png);  
 }
 
 .service-icon--home::before  {
-    background-image: url(../img/cart/HOME.png);
+    background-image: url(../img/cart/home.png);
 }
 
 .service-icon--image::before  {
-    background-image: url(../img/cart/IMAGE.png);   
+    background-image: url(../img/cart/image.png);   
 }
 
 .service-item__title {
@@ -640,26 +636,26 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .service-icon--alarm::before  {
-        background-image: url(../img/cart/ALARM@2px.png);   
+        background-image: url(../img/cart/alarm@2x.png);   
     }   
       
     .service-icon--graph::before  {
-        background-image: url(../img/cart/LINE\ GRAPH@2px.png);  
+        background-image: url(../img/cart/line_graph@2x.png);  
      }
     
     .service-icon--computer::before  {
-        background-image: url(../img/cart/COMPUTER\ _\ OK@2px.png);
+        background-image: url(../img/cart/computer@2x.png);
     }
     
     .service-icon--book::before  {
-        background-image: url(../img/cart/BOOK\ 2@2px.png);  
+        background-image: url(../img/cart/book@2x.png);  
     }
     
     .service-icon--home::before  {
-        background-image: url(../img/cart/HOME@2px.png);
+        background-image: url(../img/cart/home@2x.png);
     }
     
     .service-icon--image::before  {
-        background-image: url(../img/cart/IMAGE@2px.png);   
+        background-image: url(../img/cart/image@2x.png);   
     }
 }
