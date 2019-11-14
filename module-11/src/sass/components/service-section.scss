@@ -30,31 +30,31 @@
         }
 
         &--graph::before  {
-            background-image: url(../images/icons/LINE_GRAPH.png); 
+            background-image: url(../images/icons/line_graph.png); 
                 
             @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 &--graph::before  {
-                    background-image: url(../images/icons/LINE_GRAPH@2px.png);  
+                    background-image: url(../images/icons/line_graph@2px.png);  
                 } 
             }      
         }
 
         &--computer::before  {
-            background-image: url(../images/icons/COMPUTER.png);
+            background-image: url(../images/icons/computer.png);
             
             @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 &--computer::before  {
-                    background-image: url(../images/icons/COMPUTER@2px.png);
+                    background-image: url(../images/icons/computer@2px.png);
                 }       
             }
         }
 
         &--book::before {
-            background-image: url(../images/icons/BOOK.png); 
+            background-image: url(../images/icons/book.png); 
                 
             @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 &--book::before  {
-                    background-image: url(../images/icons/BOOK@2px.png);
+                    background-image: url(../images/icons/book@2px.png);
                 }       
             }   
         }

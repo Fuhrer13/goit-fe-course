@@ -44,7 +44,7 @@
 
 .team-item__name {
     font-size: 14px;
-    font-family: $main-font;
+    font-family: $main-font-bold;
     color: $text-color-primary;
     text-transform: uppercase;
     line-height: 1.2;
@@ -54,7 +54,7 @@
 
 .team-item__occupation {
     font-size: 15px;
-    font-family: $primary-font;
+    font-family: $primary-font-italic;
     color: $text-color-secondary;
     font-style: italic;
     line-height: 1.6;

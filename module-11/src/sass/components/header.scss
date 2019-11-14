@@ -64,7 +64,7 @@
 .page-header__img {
     background-image: linear-gradient( to bottom,
      rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9) ),
-     url(../images/Layer15.jpg);
+     url(../images/layer15.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top center;
@@ -77,7 +77,7 @@
 
 .header__title {
     font-size: 150px;
-    font-family: $main-font;
+    font-family: $main-font-bold;
     font-weight: bold;
     line-height: 140px;
     text-transform: uppercase;
@@ -100,7 +100,7 @@
 .header__btn {
     display: inline-block;
     font-size: 14px;
-    font-family: $main-font;    
+    font-family: $main-font-bold;    
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;

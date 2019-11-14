@@ -41,7 +41,7 @@
 .content__btn {
     border: none;
     font-size: 14px;
-    font-family: $main-font;
+    font-family: $main-font-bold;
     color: $text-color-main;
     font-weight: bold;
     text-transform: uppercase;
@@ -61,7 +61,7 @@
 
 ::placeholder {
     font-size: 15px;
-    font-family: $primary-font;
+    font-family: $primary-font-italic;
     color: rgb(204, 204, 204);
     font-style: italic;
     line-height: 1.6;
