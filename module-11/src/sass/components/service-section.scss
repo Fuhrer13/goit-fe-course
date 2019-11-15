@@ -1,106 +1,69 @@
 .service-item {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-    width: 381px;
-    list-style: none;
-    margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 381px;
+  list-style: none;
+  margin-bottom: 60px;
 }
 
-.service-icon {
-    &::before {
-        display: block;
-        content: "";
-        width: 32px;
-        height: 32px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
-        cursor: pointer;
-
-        &--alarm::before  {
-            background-image: url(../images/icons/ALARM.png);
-                
-            @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                &--alarm::before  {
-                    background-image: url(../images/icons/ALARM@2px.png);   
-                } 
-            }
-        }
-
-        &--graph::before  {
-            background-image: url(../images/icons/line_graph.png); 
-                
-            @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                &--graph::before  {
-                    background-image: url(../images/icons/line_graph@2px.png);  
-                } 
-            }      
-        }
-
-        &--computer::before  {
-            background-image: url(../images/icons/computer.png);
-            
-            @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                &--computer::before  {
-                    background-image: url(../images/icons/computer@2px.png);
-                }       
-            }
-        }
-
-        &--book::before {
-            background-image: url(../images/icons/book.png); 
-                
-            @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                &--book::before  {
-                    background-image: url(../images/icons/book@2px.png);
-                }       
-            }   
-        }
-
-        &--home::before {
-            background-image: url(../images/icons/HOME.png);
-        
-            @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                &--home::before  {
-                    background-image: url(../images/icons/HOME@2px.png);
-                } 
-            }  
-        }
-
-        &--image::before  {
-            background-image: url(../images/icons/IMAGE.png); 
-                
-            @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                &--image::before {
-                    background-image: url(../images/icons/IMAGE@2px.png);  
-                } 
-            }
-        }
-    }
+.service-icon::before {
+  display: block;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
 }
+
+.service-icon--alarm::before  {
+  background-image: url(../images/ALARM.png);   
+}
+  
+.service-icon--graph::before  {
+  background-image: url(../images/line_graph.png);  
+}
+
+.service-icon--computer::before  {
+  background-image: url(../images/computer.png);
+}
+
+.service-icon--book::before  {
+  background-image: url(../images/book.png);  
+}
+
+.service-icon--home::before  {
+  background-image: url(../images/HOME.png);
+}
+
+.service-icon--image::before  {
+  background-image: url(../images/IMAGE.png);   
+}
+
 
 .service-item__title {
-    font-size: 14px;
-    font-family: $main-font;
-    color: $text-color-primary;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
-    margin: 0;
-    padding-left: 55px;
-    font-weight: 300;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: $text-color-primary;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0;
+  padding-left: 55px;
+  font-weight: 300;
 }
   
 .service-item__about {
-    margin: 0;
-    padding: 0;
-    padding-left: 60px;
-    text-align: center;
-    font-family: $primary-font;
-    font-weight: 300;
-    line-height: 24px;
-    font-size: 15px;
-    color: $text-color-secondary;
+  margin: 0;
+  padding: 0;
+  padding-left: 60px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 15px;
+  color: $text-color-secondary;
 }

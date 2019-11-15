@@ -1,14 +1,12 @@
-
 @import 'helpers/variables.scss';
 @import 'normalize.scss';
-@import 'base.scss';
 
-
-@import 'components/link';
-@import 'components/container';
-@import 'components/list';
-@import 'components/header';
-@import 'components/section';
-@import 'components/service-section';
-@import 'components/team-section';
-@import 'components/page-footer';
+@import 'components/fonts.scss';
+@import 'components/link.scss';
+@import 'components/container.scss';
+@import 'components/list.scss';
+@import 'components/header.scss';
+@import 'components/section.scss';
+@import 'components/service-section.scss';
+@import 'components/team-section.scss';
+@import 'components/page-footer.scss';
